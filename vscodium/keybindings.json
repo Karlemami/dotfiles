@@ -1,0 +1,87 @@
+// Place your key bindings in this file to override the defaults
+[
+      {
+        "key": "a",
+        "command": "explorer.newFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "f",
+        "command": "explorer.newFolder",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "r",
+        "command": "renameFile",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "x",
+        "command": "filesExplorer.cut",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "y",
+        "command": "filesExplorer.copy",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceIsRoot && !inputFocus"
+      },
+      {
+        "key": "p",
+        "command": "filesExplorer.paste",
+        "when": "explorerViewletVisible && filesExplorerFocus && !explorerResourceReadonly && !inputFocus"
+      },
+      {
+        "key": "ctrl+l",
+        "command": "workbench.action.openPreviousRecentlyUsedEditor",
+      },
+      {
+        "key": "ctrl+h",
+        "command": "workbench.action.previousEditorInGroup",
+    },
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "space e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+    {
+        "key": "space e",
+        "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && !inputFocus"
+      },
+    {
+        "key": "space t",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
+        "when": "!activeEditorGroupEmpty"
+    },
+    {
+        "key": "j",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "k",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+]

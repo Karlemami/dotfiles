@@ -1,0 +1,33 @@
+{
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 14,
+    "workbench.colorTheme": "Rosé Pine",
+    "workbench.iconTheme": "material-icon-theme",
+    "editor.minimap.enabled": false,    
+    "editor.acceptSuggestionOnCommitCharacter": false, // Do not autocomplete selection when pressing space
+    "editor.scrollBeyondLastLine": false,
+    "editor.lineNumbers": "relative",
+
+    //VIM
+    
+    // To improve performance,
+    "extensions.experimental.affinity": {
+        "vscodevim.vim": 1
+    },
+
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<space>",
+    
+    // Mappings
+    "vim.normalModeKeyBindings": [
+        {
+            "before": ["<leader>", "e"],
+            "commands": ["workbench.view.explorer"]
+        },
+    ],
+    "workbench.editor.showTabs": "none"
+}
