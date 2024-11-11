@@ -1,7 +1,6 @@
 {
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
-    "workbench.colorTheme": "Rosé Pine",
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,    
     "editor.acceptSuggestionOnCommitCharacter": false, // Do not autocomplete selection when pressing space
@@ -29,5 +28,9 @@
             "commands": ["workbench.view.explorer"]
         },
     ],
-    "workbench.editor.showTabs": "none"
+    "workbench.editor.showTabs": "none",
+    "workbench.statusBar.visible": false,
+    "workbench.activityBar.location": "hidden",
+    "workbench.colorTheme": "Rosé Pine",
+    "breadcrumbs.enabled": false
 }
