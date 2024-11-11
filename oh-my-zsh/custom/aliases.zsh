@@ -13,4 +13,4 @@ alias o="cd /Users/florianphilippe/Library/Mobile\ Documents/iCloud\~md\~obsidia
 alias love="/Applications/love.app/Contents/MacOS/love"
 alias books="cd /Users/florianphilippe/Library/Mobile\ Documents/iCloud\~com\~apple\~iBooks/Documents"
 alias ubuntu="sh ~/.oh-my-zsh/custom/scripts/ubuntu.sh"
-alias ubuntucp="docker cp ~/C fb784e328b17:/root"
+alias gs="git status"
