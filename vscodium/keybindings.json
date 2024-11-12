@@ -1,5 +1,22 @@
 // Place your key bindings in this file to override the defaults
 [
+  // Navigate buffers
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.navigateUp"
+    },
+    {
+        "key": "ctrl+h",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.navigateDown"
+    },
   {
     // Navigate in command prompt and other menus
     "key": "ctrl+j",
@@ -89,6 +106,11 @@
   {
     "key": "space g g",
     "command": "workbench.view.scm",
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+  },
+  {
+    "key" : "space g c",
+    "command": "workbench.action.chat.openEditSession",
     "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
   },
   

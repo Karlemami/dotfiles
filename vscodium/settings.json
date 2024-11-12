@@ -29,8 +29,8 @@
         },
     ],
     "workbench.editor.showTabs": "none",
-    "workbench.statusBar.visible": false,
-    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": true,
     "workbench.colorTheme": "Rosé Pine",
-    "breadcrumbs.enabled": false
+    "breadcrumbs.enabled": false,
+    "workbench.activityBar.location": "hidden",
 }
