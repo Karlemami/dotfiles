@@ -33,4 +33,5 @@
     "workbench.colorTheme": "Rosé Pine",
     "breadcrumbs.enabled": false,
     "workbench.activityBar.location": "hidden",
+    "security.workspace.trust.untrustedFiles": "open",
 }
