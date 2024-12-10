@@ -25,10 +25,12 @@ yabai -m mouse_drop_action swap
 
 # excluded apps
 yabai -m rule --add app="^Signal$" manage=off
-yabai -m rule --add app="^Discord$" manage=off
 yabai -m rule --add app="^Mail$" manage=off
 yabai -m rule --add app="^WhatsApp$" manage=off
 yabai -m rule --add app="^System Settings$" manage=off
-yabai -m rule --add app="^Karabiner-Elements" manage=off
-yabai -m rule --add app="Activity Monitor" manage=off
-yabai -m rule --add app="Raycast" manage=off
+yabai -m rule --add app="^Karabiner-Elements$" manage=off
+yabai -m rule --add app="^Activity Monitor$" manage=off
+yabai -m rule --add app="^Raycast$" manage=off
+yabai -m rule --add app="^Messages$" manage=off
+yabai -m rule --add app="^Microsoft Teams$" manage=off
+yabai -m rule --add app="^FaceTime$" manage=off

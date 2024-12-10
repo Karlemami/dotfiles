@@ -1,37 +1,131 @@
 {
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
+    "workbench.colorTheme": "Rosé Pine Dawn",
     "workbench.iconTheme": "material-icon-theme",
-    "editor.minimap.enabled": false,    
+    "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false, // Do not autocomplete selection when pressing space
     "editor.scrollBeyondLastLine": false,
     "editor.lineNumbers": "relative",
-
     //VIM
-    
     // To improve performance,
     "extensions.experimental.affinity": {
         "vscodevim.vim": 1
     },
-
     "vim.easymotion": true,
     "vim.incsearch": true,
     "vim.useSystemClipboard": true,
     "vim.useCtrlKeys": true,
     "vim.hlsearch": true,
     "vim.leader": "<space>",
-    
     // Mappings
     "vim.normalModeKeyBindings": [
         {
-            "before": ["<leader>", "e"],
-            "commands": ["workbench.view.explorer"]
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
         },
     ],
     "workbench.editor.showTabs": "none",
-    "workbench.statusBar.visible": true,
-    "workbench.colorTheme": "Rosé Pine",
     "breadcrumbs.enabled": false,
+    // Latex
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-pdf",
+                "-outdir=%OUTDIR%",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "xelatex",
+            "command": "xelatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "pdflatex",
+            "command": "pdflatex",
+            "args": [
+                "-synctex=1",
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "%DOC%"
+            ],
+            "env": {}
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex",
+            "args": [
+                "%DOCFILE%"
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "pdfLaTeX",
+            "tools": [
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "latexmk 🔃",
+            "tools": [
+                "latexmk"
+            ]
+        },
+        {
+            "name": "xelatex",
+            "tools": [
+                "xelatex"
+            ]
+        },
+        {
+            "name": "pdflatex ➞ bibtex ➞ pdflatex`×2",
+            "tools": [
+                "pdflatex",
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "xelatex ➞ bibtex ➞ xelatex`×2",
+            "tools": [
+                "xelatex",
+                "bibtex",
+                "xelatex",
+                "xelatex"
+            ]
+        }
+    ],
     "workbench.activityBar.location": "hidden",
-    "security.workspace.trust.untrustedFiles": "open",
+    "github.copilot.enable": {
+        "*": false,
+        "plaintext": false,
+        "markdown": false,
+        "scminput": false
+    },
+    "explorer.confirmDragAndDrop": false,
+    "jupyter.askForKernelRestart": false,
+    "[tex]": {
+        "editor.wordWrap": "on"
+    },
 }

@@ -51,12 +51,12 @@
   {
     "key": "space b",
     "command": "workbench.action.toggleSidebarVisibility",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key": "space g e",
     "command": "workbench.view.explorer",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key": "a",
@@ -96,22 +96,32 @@
   {
     "key": "space g x",
     "command": "workbench.view.extensions",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key": "space g d",
     "command": "workbench.view.debug",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key": "space g g",
     "command": "workbench.view.scm",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key" : "space g c",
     "command": "workbench.action.chat.openEditSession",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
+  },
+  {
+    "key" : "space g t",
+    "command": "workbench.view.extension.todo-tree-container",
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
+  },
+  {
+    "key" : "space g l",
+    "command": "workbench.view.extension.latex-workshop-activitybar",
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   
   /////////////////////////////////////////////////////////////////////////////////////////// SIDEBAR
@@ -128,7 +138,7 @@
   {
     "key": "space t",
     "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup",
-    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus"
+    "when": "!activeEditorGroupEmpty && vim.mode == 'Normal' && editorTextFocus || (notebookEditorFocused && !textInputFocus)"
   },
   {
     "key": "ctrl+tab",
