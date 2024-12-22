@@ -1,7 +1,7 @@
 {
     "editor.fontFamily": "JetBrains Mono",
     "editor.fontSize": 14,
-    "workbench.colorTheme": "Rosé Pine Dawn",
+    "workbench.colorTheme": "Rosé Pine Moon",
     "workbench.iconTheme": "material-icon-theme",
     "editor.minimap.enabled": false,
     "editor.acceptSuggestionOnCommitCharacter": false, // Do not autocomplete selection when pressing space
@@ -128,4 +128,6 @@
     "[tex]": {
         "editor.wordWrap": "on"
     },
+    "update.showReleaseNotes": false,
+    "python.defaultInterpreterPath": "/Users/florianphilippe/envs/base",
 }
