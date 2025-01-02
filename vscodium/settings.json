@@ -130,4 +130,6 @@
     },
     "update.showReleaseNotes": false,
     "python.defaultInterpreterPath": "/Users/florianphilippe/envs/base",
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
 }
