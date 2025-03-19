@@ -1,3 +1,4 @@
+~/venvs/base/bin/xonsh
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
@@ -110,4 +111,7 @@ source ~/venvs/base/bin/activate
 
 # Enable vi mode
 set -o vi
+export PATH="/usr/local/opt/tcl-tk/bin:$PATH"
+export LDFLAGS="-L/usr/local/opt/tcl-tk/lib"
+export CPPFLAGS="-I/usr/local/opt/tcl-tk/include"
 
